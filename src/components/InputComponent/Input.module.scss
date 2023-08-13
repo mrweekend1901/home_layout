@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  border-radius: 5px;
+
+  .input {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .icon {
+    color: var(--text-grey);
+    margin: 0 10px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--black-color);
+    }
+  }
+}

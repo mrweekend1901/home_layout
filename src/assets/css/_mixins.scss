@@ -1,0 +1,33 @@
+// _mixins.scss
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'tablet' {
+    @media (min-width: 576px) and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'desktop' {
+    @media (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'large-desktop' {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 'xlarge-desktop' {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

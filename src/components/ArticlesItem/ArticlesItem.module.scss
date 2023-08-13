@@ -1,0 +1,92 @@
+@import '../../assets/css/mixins';
+
+.articles_group {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease-in-out;
+
+  @include respond-to('mobile') {
+    // Quy tắc responsive cho mobile
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadown);
+  }
+
+  .group_img {
+    .articles_img {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  .group_name {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .gr_name {
+      .articles_date {
+        color: var(--black-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+
+      .articles_name {
+        line-height: 30px;
+        color: var(--black-color);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        // ... khi quá dài
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+
+      .articles_desc {
+        color: var(--text-second);
+        margin-bottom: 40px;
+        font-size: 1.4rem;
+        line-height: 25px;
+      }
+    }
+
+    .btn_link {
+      text-decoration: none;
+      color: var(--black-color);
+
+      .articles_btn {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--text-grey);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--black-color);
+        }
+
+        .articles_btn-icon {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

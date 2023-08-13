@@ -1,0 +1,143 @@
+@import '../../../../assets/css/mixins';
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 74px;
+  padding: 0 137px;
+  background-color: transparent;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+
+  @include respond-to('tablet') {
+    // Quy tắc responsive cho tablet
+    padding: 0 60px;
+  }
+
+  @include respond-to('mobile') {
+    // Quy tắc responsive cho mobile
+    padding: 0 30px;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+
+  &.bg {
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .logo_img {
+    width: 92px;
+  }
+
+  .over-lay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Màu nền mờ */
+    backdrop-filter: blur(20px); /* Độ mờ */
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5); /* Độ mờ nhòe trắng */
+    z-index: 9999999999; /* Đảm bảo lớp overlay nằm trên tất cả các phần tử khác */
+
+    .menu {
+      width: 25%;
+      height: 100%;
+      position: absolute;
+      right: -100%;
+      transition: right 1s ease;
+
+      &.openMenu {
+        right: 0;
+      }
+
+      @include respond-to('tablet') {
+        // Quy tắc responsive cho tablet
+        width: 46%;
+      }
+
+      @include respond-to('mobile') {
+        // Quy tắc responsive cho mobile
+        width: 75%;
+      }
+    }
+  }
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+
+  .nav_link-group {
+    @include respond-to('tablet') {
+      // Quy tắc responsive cho tablet
+      display: none;
+    }
+
+    @include respond-to('mobile') {
+      // Quy tắc responsive cho mobile
+      display: none;
+    }
+    .nav_link {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--white-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--red-color);
+      }
+
+      &.bg {
+        color: var(--black-color);
+      }
+
+      .nav_link-icon {
+        margin-left: 6px;
+        margin-right: 22px;
+      }
+    }
+  }
+
+  .header_nav-icon {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--red-color);
+    }
+
+    &.bg {
+      color: var(--black-color);
+    }
+
+    .cart {
+      margin-left: 20px;
+      position: relative;
+      font-size: 1.5rem;
+      .cart_num {
+        position: absolute;
+        padding: 1px 4px;
+        font-size: 1rem;
+        color: var(--white-color);
+        background-color: var(--red-color);
+        border-radius: 50%;
+        top: -10px;
+        right: -10px;
+      }
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

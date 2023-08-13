@@ -1,0 +1,43 @@
+@import '../../assets/css/mixins';
+
+.destinations_group {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  @include respond-to('mobile') {
+    // Quy tắc responsive cho mobile
+    margin-top: 30px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadown);
+  }
+
+  .destinations_img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+
+    @include respond-to('tablet') {
+      // Quy tắc responsive cho tablet
+      width: 155px;
+      height: 180px;
+    }
+  }
+
+  .destination_name {
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+  }
+}

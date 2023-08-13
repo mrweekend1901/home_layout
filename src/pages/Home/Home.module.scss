@@ -1,0 +1,288 @@
+@import '../../assets/css/mixins';
+
+.home_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .home_slider {
+    position: relative;
+    width: 100%;
+    height: 800px;
+
+    .slider_video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slider_container {
+      position: absolute;
+      width: 100%;
+      max-width: 1200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include respond-to('tablet') {
+        // Quy tắc responsive cho tablet
+        padding: 0 50px;
+      }
+
+      .slider_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: var(--white-color);
+        margin-bottom: 20px;
+
+        @include respond-to('mobile') {
+          // Quy tắc responsive cho mobile
+          padding: 0 20px;
+        }
+
+        .title_first {
+          text-align: center;
+          line-height: 62px;
+          font-size: 3.6rem;
+          font-weight: 700;
+
+          @include respond-to('mobile') {
+            // Quy tắc responsive cho mobile
+            font-size: 2.4rem;
+            line-height: 40px;
+          }
+        }
+
+        .title_second {
+          font-size: 1.5rem;
+          text-align: center;
+          @include respond-to('mobile') {
+            // Quy tắc responsive cho mobile
+            font-weight: 500;
+          }
+        }
+      }
+
+      .slider_search-group {
+        margin-bottom: 24px;
+
+        @include respond-to('mobile') {
+          // Quy tắc responsive cho mobile
+          padding: 0 35px;
+          margin-bottom: 10px;
+        }
+
+        .rotate-icon {
+          transform: rotate(90deg);
+        }
+
+        .btn {
+          font-size: 1.5rem;
+          font-weight: 500;
+          width: 100%;
+          border: none;
+          color: var(--white-color);
+          background-color: var(--red-color);
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #1ec6b6;
+          }
+        }
+      }
+
+      .btn_show-more {
+        display: flex;
+        align-items: center;
+        color: var(--white-color);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        @include respond-to('mobile') {
+          // Quy tắc responsive cho mobile
+          padding: 0 35px;
+        }
+
+        .btn_show-more-icon {
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .destinations_container,
+    .trips_container,
+    .choose_container,
+    .articles_container {
+      width: 100%;
+      max-width: 1200px;
+
+      .destinations_title,
+      .trips_title,
+      .choose_title,
+      .articles_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: var(--black-color);
+        margin-top: 70px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @include respond-to('mobile') {
+          // Quy tắc responsive cho mobile
+          margin-top: 40px;
+          margin-bottom: 0;
+        }
+
+        .title_first {
+          line-height: 62px;
+          font-size: 3.6rem;
+          font-weight: 700;
+
+          @include respond-to('mobile') {
+            // Quy tắc responsive cho mobile
+            font-size: 2.4rem;
+            line-height: 38px;
+          }
+        }
+
+        .title_second {
+          font-weight: 500;
+          font-size: 1.5rem;
+          color: var(--text-grey);
+        }
+      }
+
+      .choose_title {
+        margin-bottom: 50px;
+      }
+    }
+
+    .bg_full {
+      width: 100%;
+      height: 425px;
+      background: url('../../assets/img/bg.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .footer {
+      color: var(--white-color);
+      background-color: var(--black-color);
+
+      .footer_group {
+        margin: 50px 0;
+        @include respond-to('mobile') {
+          // Quy tắc responsive cho mobile
+          margin: 20px 0;
+        }
+
+        .footer_name {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .footer_desc {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: #ccc;
+          letter-spacing: 1.2;
+          line-height: 30px;
+          margin-right: 20px;
+        }
+
+        .footer_group-img {
+          .img {
+            margin-top: 20px;
+            height: 120px;
+
+            @include respond-to('tablet') {
+              // Quy tắc responsive cho tablet
+              height: 90px;
+            }
+          }
+        }
+
+        .footer_info {
+          display: flex;
+          align-items: center;
+          color: #ccc;
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+
+          .info_icon {
+            margin-right: 10px;
+          }
+        }
+
+        .footer_group-contact {
+          display: flex;
+          margin-top: 30px;
+          flex-wrap: wrap;
+
+          @include respond-to('mobile') {
+            // Quy tắc responsive cho tablet
+            justify-content: center;
+          }
+
+          .contact_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-top: 15px;
+          }
+        }
+
+        .footer_img {
+          display: block;
+          height: 125.75px;
+          border-radius: 5px;
+          overflow: hidden;
+
+          @include respond-to('tablet') {
+            // Quy tắc responsive cho tablet
+            height: 71.5px;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .back-to-top-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    color: var(--white-color);
+    border: none;
+    background-color: var(--light-blue);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--box-shadown);
+    }
+  }
+}

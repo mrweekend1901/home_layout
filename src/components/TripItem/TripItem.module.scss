@@ -1,0 +1,144 @@
+@import '../../assets/css/mixins';
+
+.trips_group {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  @include respond-to('mobile') {
+    // Quy tắc responsive cho mobile
+    margin-top: 30px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadown);
+  }
+
+  &:hover .trips_price-tag {
+    transform: scale(1.1);
+  }
+  .group_img {
+    position: relative;
+    .trips_img {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .trips_price-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      min-width: 70px;
+      position: absolute;
+      background-color: var(--red-color);
+      margin-bottom: 15px;
+      padding: 5px 10px;
+      bottom: 0;
+      left: 0;
+      transition-duration: 0.2s;
+
+      .old-price {
+        text-decoration: line-through;
+        color: var(--white-color);
+        opacity: 0.5;
+        font-size: 1.3rem;
+        margin-right: 5px;
+      }
+
+      .new-price {
+        font-weight: 700;
+        color: var(--white-color);
+      }
+    }
+  }
+
+  .group_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 130px;
+
+    .group_name_top {
+      display: flex;
+      flex-direction: column;
+      .trips_name {
+        color: var(--black-color);
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      .trips_desc {
+        margin-top: 9px;
+        font-size: 1.3rem;
+        // ... khi quá dài
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+    }
+
+    .group_review {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      margin-top: 10px;
+
+      .group_rating,
+      .group_day {
+        display: flex;
+        align-items: center;
+        .star {
+          font-size: 1.2rem;
+          color: var(--text-grey);
+        }
+
+        .clock {
+          font-size: 1.2rem;
+        }
+
+        .active {
+          color: var(--light-blue) !important;
+        }
+
+        .text_review {
+          margin-left: 2px;
+          line-height: 13px;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: var(--black-color);
+        }
+      }
+    }
+  }
+
+  .sale_tags {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -12px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--light-blue);
+  }
+}
