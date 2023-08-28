@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/home_layoutdemo/static/css/main.c01bb6f4.css",
+    "main.js": "/home_layoutdemo/static/js/main.1c7df6f4.js",
+    "static/js/787.6309f59b.chunk.js": "/home_layoutdemo/static/js/787.6309f59b.chunk.js",
+    "static/media/video.mp4": "/home_layoutdemo/static/media/video.1e1a4159eaf3274eb1a2.mp4",
+    "static/media/bg.jpg": "/home_layoutdemo/static/media/bg.6542d9766fd12ec0ccec.jpg",
+    "static/media/art2.jpeg": "/home_layoutdemo/static/media/art2.4aaf195791abbb8734b4.jpeg",
+    "static/media/art1.jpg": "/home_layoutdemo/static/media/art1.489b7c09da1d05411556.jpg",
+    "static/media/art3.jpg": "/home_layoutdemo/static/media/art3.59a5456f9e5649f5f90f.jpg",
+    "static/media/tokyo.jpg": "/home_layoutdemo/static/media/tokyo.e26203503f0f7928c561.jpg",
+    "static/media/seuol.jpg": "/home_layoutdemo/static/media/seuol.30b1a7a9a11fc5ebfab3.jpg",
+    "static/media/trip1.jpeg": "/home_layoutdemo/static/media/trip1.3f2f9d2aa2171b8dbd86.jpeg",
+    "static/media/trip2.jpeg": "/home_layoutdemo/static/media/trip2.925332323197c4bc3d28.jpeg",
+    "static/media/tour1.jpeg": "/home_layoutdemo/static/media/tour1.1030f3bc2f7b8c5e9f2e.jpeg",
+    "static/media/tour2.jpeg": "/home_layoutdemo/static/media/tour2.327ddd906ffd69884e3e.jpeg",
+    "static/media/trip3.jpeg": "/home_layoutdemo/static/media/trip3.2349c1b42e071c936933.jpeg",
+    "static/media/london.jpg": "/home_layoutdemo/static/media/london.5a85e7f9097f891d21f4.jpg",
+    "static/media/paris.jpg": "/home_layoutdemo/static/media/paris.520abe32fc28a9a7705f.jpg",
+    "static/media/awards.png": "/home_layoutdemo/static/media/awards.a6899c1607e666b2c9fa.png",
+    "static/media/service.png": "/home_layoutdemo/static/media/service.63853035d7e501cfde15.png",
+    "static/media/price.png": "/home_layoutdemo/static/media/price.c85ec0d3120fc434439e.png",
+    "static/media/hotel.png": "/home_layoutdemo/static/media/hotel.fb7a3e26a647dfe7a5a0.png",
+    "static/media/ft1.jpg": "/home_layoutdemo/static/media/ft1.36b4fa3ef017e35380db.jpg",
+    "static/media/ft3.jpg": "/home_layoutdemo/static/media/ft3.4691225a6295b60c4cf6.jpg",
+    "static/media/ft6.jpg": "/home_layoutdemo/static/media/ft6.10fe3608e6078c50f204.jpg",
+    "static/media/ft5.jpg": "/home_layoutdemo/static/media/ft5.70b10e515d3a0bdbad83.jpg",
+    "static/media/ft4.jpg": "/home_layoutdemo/static/media/ft4.cc986f34df31355159f3.jpg",
+    "index.html": "/home_layoutdemo/index.html",
+    "main.c01bb6f4.css.map": "/home_layoutdemo/static/css/main.c01bb6f4.css.map",
+    "main.1c7df6f4.js.map": "/home_layoutdemo/static/js/main.1c7df6f4.js.map",
+    "787.6309f59b.chunk.js.map": "/home_layoutdemo/static/js/787.6309f59b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c01bb6f4.css",
+    "static/js/main.1c7df6f4.js"
+  ]
+}
